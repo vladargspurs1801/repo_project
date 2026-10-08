@@ -1,0 +1,19 @@
+pipeline_logger 2026-10-05 18:56:37,257 INFO work:327 Проверяем, был ли ранее загружен файл
+pipeline_logger 2026-10-05 18:56:37,257 INFO __enter__:52 Начинаем подключение к Postgres.
+pipeline_logger 2026-10-05 18:56:37,309 INFO __enter__:57 Подключение к Postgres выполнили
+pipeline_logger 2026-10-05 18:56:37,311 INFO get_date_modify_file:68 Получаем timestamp изменения файла из watermark.
+pipeline_logger 2026-10-05 18:56:37,312 INFO work:334 Файл ранее не был загружен. Начинаем загрузку записей.
+pipeline_logger 2026-10-05 18:56:37,312 INFO load_watermark:80 Загружаем информацию об обновлении файла в watermark.
+pipeline_logger 2026-10-05 18:56:37,312 INFO load_watermark:89 Информация об обновлении файла добавлена в watermark.
+pipeline_logger 2026-10-05 18:56:37,312 INFO validation_csv:277 выполняем 1 этап валидации
+pipeline_logger 2026-10-05 18:56:37,313 INFO validation_csv:289 Первый этап валидации выполнен.
+pipeline_logger 2026-10-05 18:56:37,313 INFO validation_csv:292 выполняем 2 этап валидации
+pipeline_logger 2026-10-05 18:56:37,314 INFO validation_csv:297 Второй этап валидации выполнен
+pipeline_logger 2026-10-05 18:56:37,314 INFO load_table_stg:99 Начинаем очищать содержимое таблицы public.customers_orders_stg
+pipeline_logger 2026-10-05 18:56:37,318 INFO load_table_stg:101 Содержимое таблицы очищено
+pipeline_logger 2026-10-05 18:56:37,318 INFO load_table_stg:111 Начинаем выполнять массовую вставку
+pipeline_logger 2026-10-05 18:56:37,320 INFO load_table_stg:115 Выполнили массовую вставку
+pipeline_logger 2026-10-05 18:56:37,329 INFO load_table_core:130 Начинаем заполнять целевую таблицу в слое core.
+pipeline_logger 2026-10-05 18:56:37,331 INFO load_table_core:156 Целевая таблица в слое core заполнена.
+pipeline_logger 2026-10-05 18:56:37,331 INFO __exit__:167 Работа с базой проведена без ошибок. Сохраняем изменения.
+pipeline_logger 2026-10-05 18:56:37,334 INFO __exit__:173 Закрываем соединение.
